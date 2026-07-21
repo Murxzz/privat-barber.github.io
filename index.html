@@ -4,43 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eleganta barbershop un frizētavas mājaslapas šablons">
-  <title>Barbershop - Premium Matu Griezumi un Bārdas Kopšana</title>
-
-  <!-- Google Fonts & Stylesheet -->
+  <meta name="description"
+    content="PRIVAT BARBER &mdash; Premium barbershop Rīgā. Matu griezumi, bārdas korekcija, galvas skūšana. 13. janvāra iela 3, Centra rajons, Rīga. Pierakstieties!">
+  <meta name="keywords" content="barbershop Rīgā, matu griezums, bārdas korekcija, privat barber, frizētava rīgā">
+  <title>PRIVAT BARBER &mdash; Premium Barbershop Rīgā</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ==========================================================================
-     1. NAVIGATION
-     ========================================================================== -->
+  <!-- NAVIGĀCIJA -->
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="#hero" class="logo-box">
-        <div class="logo-badge">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M6 3v18M18 3v18M6 8h12M6 16h12" />
-          </svg>
-        </div>
-        <span>LOGO</span>
+        <img src="images/logo.png" alt="Privat Barber logo" class="nav-logo-img" />
       </a>
-
       <nav>
         <ul class="nav-menu">
           <li><a href="#hero" class="nav-link active">Sākums</a></li>
           <li><a href="#about" class="nav-link">Par mums</a></li>
-          <li><a href="#pricing" class="nav-link">Cenas</a></li>
+          <li><a href="#pricing" class="nav-link">Pakalpojumi</a></li>
           <li><a href="#gallery" class="nav-link">Galerija</a></li>
           <li><a href="#testimonials" class="nav-link">Atsauksmes</a></li>
           <li><a href="#contact" class="nav-link">Kontakti</a></li>
         </ul>
       </nav>
-
       <button class="btn btn-primary nav-cta-desktop open-booking-modal">PIERAKSTĪTIES</button>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Atvērt izvēlni">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -48,525 +39,544 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
   <div class="nav-overlay" id="navOverlay"></div>
   <aside class="mobile-nav" id="mobileNav">
-    <div class="logo-box" style="margin-bottom: 40px;">
-      <div class="logo-badge">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 3v18M18 3v18M6 8h12M6 16h12" />
-        </svg>
-      </div>
-      <span>LOGO</span>
+    <div class="mobile-nav-logo">
+      <img src="images/logo.png" alt="Privat Barber logo" style="height:70px;object-fit:contain" />
     </div>
     <ul class="mobile-nav-links">
       <li><a href="#hero" class="nav-link mobile-link">Sākums</a></li>
       <li><a href="#about" class="nav-link mobile-link">Par mums</a></li>
-      <li><a href="#pricing" class="nav-link mobile-link">Cenas</a></li>
+      <li><a href="#pricing" class="nav-link mobile-link">Pakalpojumi</a></li>
       <li><a href="#gallery" class="nav-link mobile-link">Galerija</a></li>
       <li><a href="#testimonials" class="nav-link mobile-link">Atsauksmes</a></li>
       <li><a href="#contact" class="nav-link mobile-link">Kontakti</a></li>
     </ul>
-    <button class="btn btn-primary open-booking-modal" style="width: 100%; margin-top: 20px;">PIERAKSTĪTIES</button>
+    <button class="btn btn-primary open-booking-modal" style="width:100%;margin-top:24px">PIERAKSTĪTIES</button>
   </aside>
 
   <main>
-    <!-- ==========================================================================
-       2. HERO SECTION
-       ========================================================================== -->
+
+    <!-- SĀKUMLAPA -->
     <section class="hero-section" id="hero">
       <div class="hero-glow-1"></div>
       <div class="hero-glow-2"></div>
       <div class="container hero-grid">
         <div class="hero-content reveal">
           <div class="section-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10" />
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
             </svg>
-            APAKŠVIRSRAKSTS
+            PREMIUM BARBERSHOP RĪGĀ
           </div>
-          <h1 class="hero-title">VIRSRAKSTS</h1>
-          <p class="hero-description">APRAKSTS</p>
+          <h1 class="hero-title">Tavs <span class="text-gradient">barbershop</span> Rīgas centrā</h1>
+          <p class="hero-description">Matu griešana, bārdas korekcija un galvas skūšana no pieredzējušiem meistariem.
+            Bez liekām formalitātēm tikai kvalitatīvs serviss un laba atmosfēra.</p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">5.0&#9733;</div>
+              <div class="stat-label">Google vērtējums</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Speciālisti</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">11+</div>
+              <div class="stat-label">Pakalpojumi</div>
+            </div>
+          </div>
           <div class="hero-actions">
             <button class="btn btn-primary open-booking-modal">PIERAKSTĪTIES</button>
             <a href="#about" class="btn btn-secondary">UZZINĀT VAIRĀK</a>
           </div>
         </div>
-
         <div class="hero-image-wrapper reveal delay-1">
           <div class="hero-image-card glass-card">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path
-                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                <line x1="12" y1="22.08" x2="12" y2="12" />
+            <div class="hero-placeholder">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
               </svg>
-              <span>ATTĒLS</span>
+              <span>Attēls drīzumā</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================================
-       3. ABOUT SECTION
-       ========================================================================== -->
+    <!-- PAR MUMS -->
     <section class="section" id="about">
       <div class="container about-grid">
         <div class="about-image-container reveal">
-          <div class="img-placeholder" style="height: 100%;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <span>ATTĒLS</span>
+          <img src="images/shop_exterior.png" alt="Privat Barber ārpuse Rīgā" class="about-img" />
+          <div class="about-image-tag glass-card">
+            <span>&#128205; 13. janvāra iela 3, Centra rajons, Rīga</span>
           </div>
         </div>
-
         <div class="about-content reveal delay-1">
-          <div class="section-tag">TEKSTS</div>
-          <h2 class="section-title">VIRSRAKSTS</h2>
-          <p class="section-subtitle" style="margin-bottom: 24px; text-align: left;">APRAKSTS</p>
-
+          <div class="section-tag">PAR MUMS</div>
+          <h2 class="section-title">Viens no Labākajiem Rīgas <span class="text-gradient">Barbershop</span></h2>
+          <p class="section-subtitle" style="margin-bottom:24px;text-align:left">PRIVAT BARBER ir salons Rīgas centrā.
+            Meistari Iļja un Ļubova parūpēsies par tavu matu un bārdas griezumu &mdash; no klasikas līdz mūsdienīgam
+            stilam, neaizmirstot par kārtīgu servisu un labu atmosfēru.</p>
           <div class="about-features-grid">
             <div class="feature-card glass-card">
-              <div class="feature-icon-wrapper">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="feature-icon-wrapper"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </div>
-              <div style="font-weight: 700; color: var(--text-bright);">TEKSTS</div>
+                </svg></div>
+              <div style="font-weight:700;color:var(--text-bright)">Premium kvalitāte</div>
             </div>
-
             <div class="feature-card glass-card">
-              <div class="feature-icon-wrapper">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="feature-icon-wrapper"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </div>
-              <div style="font-weight: 700; color: var(--text-bright);">TEKSTS</div>
+                </svg></div>
+              <div style="font-weight:700;color:var(--text-bright)">Pieredzējuši meistari</div>
             </div>
-
             <div class="feature-card glass-card">
-              <div class="feature-icon-wrapper">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="feature-icon-wrapper"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </div>
-              <div style="font-weight: 700; color: var(--text-bright);">TEKSTS</div>
+                </svg></div>
+              <div style="font-weight:700;color:var(--text-bright)">Pieejamas cenas</div>
             </div>
-
             <div class="feature-card glass-card">
-              <div class="feature-icon-wrapper">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="feature-icon-wrapper"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              <div style="font-weight:700;color:var(--text-bright)">Patīkama atmosfēra</div>
+            </div>
+          </div>
+          <div class="specialists-row">
+            <div class="specialist-card glass-card">
+              <div class="specialist-avatar">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
                 </svg>
               </div>
-              <div style="font-weight: 700; color: var(--text-bright);">TEKSTS</div>
+              <div class="specialist-info">
+                <div class="specialist-name">Ilja</div>
+                <div class="specialist-role">Barbieris &bull; 5.0 &#9733; (6)</div>
+              </div>
+            </div>
+            <div class="specialist-card glass-card">
+              <div class="specialist-avatar">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="specialist-info">
+                <div class="specialist-name">Ļubova</div>
+                <div class="specialist-role">Barbiere</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================================
-       4. PRICING SECTION
-       ========================================================================== -->
+    <!-- PAKALPOJUMI UN CENAS -->
     <section class="section" id="pricing">
       <div class="container">
         <div class="section-header reveal">
-          <div class="section-tag">TEKSTS</div>
-          <h2 class="section-title">VIRSRAKSTS</h2>
-          <p class="section-subtitle">APRAKSTS</p>
+          <div class="section-tag">PAKALPOJUMI</div>
+          <h2 class="section-title">Pakalpojumi un <span class="text-gradient">Cenas</span></h2>
+          <p class="section-subtitle">Pieņemamas cenas, precīzs darbs un pārdomātas detaļas katrā griezumā.</p>
         </div>
-
         <div class="pricing-wrapper glass-card reveal">
-
+          <!-- MATI -->
+          <div class="pricing-category">Mati</div>
           <div class="pricing-list">
             <div class="pricing-row">
-              <span class="pricing-name">PAKALPOJUMA NOSAUKUMS</span>
-              <span class="pricing-price">CENA</span>
+              <div class="pricing-info">
+                <span class="pricing-name">Matu griezums ar trimmeri (Buzz Cut)</span>
+                <span class="pricing-duration">45 min</span>
+              </div>
+              <span class="pricing-price">25 &euro;</span>
             </div>
             <div class="pricing-row">
-              <span class="pricing-name">PAKALPOJUMA NOSAUKUMS</span>
-              <span class="pricing-price">CENA</span>
+              <div class="pricing-info">
+                <span class="pricing-name">Klasisks matu griezums &mdash; īsi mati (HairCut Short Hair)</span>
+                <span class="pricing-duration">45 min</span>
+              </div>
+              <span class="pricing-price">30 &euro;</span>
             </div>
             <div class="pricing-row">
-              <span class="pricing-name">PAKALPOJUMA NOSAUKUMS</span>
-              <span class="pricing-price">CENA</span>
+              <div class="pricing-info">
+                <span class="pricing-name">Galvas skūšana ar karstu dvieli un nazi (Headshave HotTowels &amp;
+                  Razor)</span>
+                <span class="pricing-duration">45 min</span>
+              </div>
+              <span class="pricing-price">30 &euro;</span>
             </div>
             <div class="pricing-row">
-              <span class="pricing-name">PAKALPOJUMA NOSAUKUMS</span>
-              <span class="pricing-price">CENA</span>
+              <div class="pricing-info">
+                <span class="pricing-name">Bērnu matu griezums (Kids Haircut)</span>
+                <span class="pricing-duration">45 min</span>
+              </div>
+              <span class="pricing-price">25 &euro;</span>
+            </div>
+          </div>
+
+          <!-- BĀRDA -->
+          <div class="pricing-category">Bārda</div>
+          <div class="pricing-list">
+            <div class="pricing-row">
+              <div class="pricing-info">
+                <span class="pricing-name">Bārdas korekcija ar karstu dvieli un nazi (Beard Trim + HotTowel Razor
+                  Shave)</span>
+                <span class="pricing-duration">45 min</span>
+              </div>
+              <span class="pricing-price">25 &euro;</span>
             </div>
             <div class="pricing-row">
-              <span class="pricing-name">PAKALPOJUMA NOSAUKUMS</span>
-              <span class="pricing-price">CENA</span>
+              <div class="pricing-info">
+                <span class="pricing-name">Sausa bārdas korekcija ar trimmeri (Beard Trim With Trimmer Only)</span>
+                <span class="pricing-duration">45 min</span>
+              </div>
+              <span class="pricing-price">20 &euro;</span>
             </div>
             <div class="pricing-row">
-              <span class="pricing-name">PAKALPOJUMA NOSAUKUMS</span>
-              <span class="pricing-price">CENA</span>
+              <div class="pricing-info">
+                <span class="pricing-name">Pilnīga bārdas noskūšana ar karstu dvieli un nazi (Full Shave / HotTowel
+                  Razor Shave)</span>
+                <span class="pricing-duration">45 min</span>
+              </div>
+              <span class="pricing-price">25 &euro;</span>
             </div>
+            <div class="pricing-row">
+              <div class="pricing-info">
+                <span class="pricing-name">Vaska epilācija (Wax)</span>
+                <span class="pricing-duration">5 min</span>
+              </div>
+              <span class="pricing-price">5 &euro;</span>
+            </div>
+          </div>
+
+          <!-- PAPILDUS PAKALPOJUMI (KOMBO UN SPECIĀLIE PAKALPOJUMI) -->
+          <div class="pricing-extra" id="pricingExtra" style="display: none;">
+            <!-- KOMBO -->
+            <div class="pricing-category">Kombo</div>
+            <div class="pricing-list">
+              <div class="pricing-row">
+                <div class="pricing-info">
+                  <span class="pricing-name">Matu griezums + Bārdas korekcija (Haircut + Beard trim)</span>
+                  <span class="pricing-duration">1 h 15 min</span>
+                </div>
+                <span class="pricing-price">45 &euro;</span>
+              </div>
+            </div>
+
+            <!-- SPECIĀLIE PAKALPOJUMI -->
+            <div class="pricing-category">Speciālie pakalpojumi</div>
+            <div class="pricing-list">
+              <div class="pricing-row">
+                <div class="pricing-info">
+                  <span class="pricing-name">Bārdas korekcija + Bārdas tonēšana (Beard Trim + Beard Colouring)</span>
+                  <span class="pricing-duration">60 min</span>
+                </div>
+                <span class="pricing-price">35 &euro;</span>
+              </div>
+              <div class="pricing-row">
+                <div class="pricing-info">
+                  <span class="pricing-name">Matu griezums + Sirmo matu tonēšana (Haircut + Silver Hair Tinting)</span>
+                  <span class="pricing-duration">15 min</span>
+                </div>
+                <span class="pricing-price">40 &euro;</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 24px;">
+            <button type="button" class="btn btn-secondary" id="togglePricingBtn">
+              SKATĪT VAIRĀK
+            </button>
+          </div>
+
+          <div class="pricing-cta">
+            <button class="btn btn-primary open-booking-modal">PIERAKSTĪTIES TAGAD</button>
+            <span class="pricing-note">Cenas sākot no 5 &euro;</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================================
-       5. GALLERY SECTION
-       ========================================================================== -->
+    <!-- GALERIJA -->
     <section class="section" id="gallery">
       <div class="container">
         <div class="section-header reveal">
-          <div class="section-tag">TEKSTS</div>
-          <h2 class="section-title">VIRSRAKSTS</h2>
-          <p class="section-subtitle">APRAKSTS</p>
+          <div class="section-tag">GALERIJA</div>
+          <h2 class="section-title">Mūsu <span class="text-gradient">Galerija</span></h2>
+          <p class="section-subtitle">Ieskatieties mūsu barbershopā &mdash; mūsu darbi runā paši par sevi.</p>
         </div>
-
         <div class="gallery-grid">
-          <!-- 8 Gallery Image Placeholders -->
           <div class="gallery-item reveal">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
               </svg>
-              <span>ATTĒLS</span>
+              <span>Drīzumā</span>
             </div>
             <div class="gallery-overlay">
-              <div class="gallery-title">ATTĒLS</div>
-              <div class="gallery-icon-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="gallery-title">Darbs</div>
+              <div class="gallery-icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="15 3 21 3 21 9" />
                   <polyline points="9 21 3 21 3 15" />
                   <line x1="21" y1="3" x2="14" y2="10" />
                   <line x1="3" y1="21" x2="10" y2="14" />
-                </svg>
-              </div>
+                </svg></div>
             </div>
           </div>
-
           <div class="gallery-item reveal delay-1">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
               </svg>
-              <span>ATTĒLS</span>
+              <span>Drīzumā</span>
             </div>
             <div class="gallery-overlay">
-              <div class="gallery-title">ATTĒLS</div>
-              <div class="gallery-icon-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="gallery-title">Darbs</div>
+              <div class="gallery-icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="15 3 21 3 21 9" />
                   <polyline points="9 21 3 21 3 15" />
                   <line x1="21" y1="3" x2="14" y2="10" />
                   <line x1="3" y1="21" x2="10" y2="14" />
-                </svg>
-              </div>
+                </svg></div>
             </div>
           </div>
-
           <div class="gallery-item reveal delay-2">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
               </svg>
-              <span>ATTĒLS</span>
+              <span>Drīzumā</span>
             </div>
             <div class="gallery-overlay">
-              <div class="gallery-title">ATTĒLS</div>
-              <div class="gallery-icon-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="gallery-title">Darbs</div>
+              <div class="gallery-icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="15 3 21 3 21 9" />
                   <polyline points="9 21 3 21 3 15" />
                   <line x1="21" y1="3" x2="14" y2="10" />
                   <line x1="3" y1="21" x2="10" y2="14" />
-                </svg>
-              </div>
+                </svg></div>
             </div>
           </div>
-
           <div class="gallery-item reveal delay-3">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
               </svg>
-              <span>ATTĒLS</span>
+              <span>Drīzumā</span>
             </div>
             <div class="gallery-overlay">
-              <div class="gallery-title">ATTĒLS</div>
-              <div class="gallery-icon-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="gallery-title">Darbs</div>
+              <div class="gallery-icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="15 3 21 3 21 9" />
                   <polyline points="9 21 3 21 3 15" />
                   <line x1="21" y1="3" x2="14" y2="10" />
                   <line x1="3" y1="21" x2="10" y2="14" />
-                </svg>
-              </div>
+                </svg></div>
             </div>
           </div>
-
           <div class="gallery-item reveal">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
               </svg>
-              <span>ATTĒLS</span>
+              <span>Drīzumā</span>
             </div>
             <div class="gallery-overlay">
-              <div class="gallery-title">ATTĒLS</div>
-              <div class="gallery-icon-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="gallery-title">Darbs</div>
+              <div class="gallery-icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="15 3 21 3 21 9" />
                   <polyline points="9 21 3 21 3 15" />
                   <line x1="21" y1="3" x2="14" y2="10" />
                   <line x1="3" y1="21" x2="10" y2="14" />
-                </svg>
-              </div>
+                </svg></div>
             </div>
           </div>
-
           <div class="gallery-item reveal delay-1">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
+            <div class="gallery-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
               </svg>
-              <span>ATTĒLS</span>
+              <span>Drīzumā</span>
             </div>
             <div class="gallery-overlay">
-              <div class="gallery-title">ATTĒLS</div>
-              <div class="gallery-icon-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="gallery-title">Darbs</div>
+              <div class="gallery-icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <polyline points="15 3 21 3 21 9" />
                   <polyline points="9 21 3 21 3 15" />
                   <line x1="21" y1="3" x2="14" y2="10" />
                   <line x1="3" y1="21" x2="10" y2="14" />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item reveal delay-2">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
-              </svg>
-              <span>ATTĒLS</span>
-            </div>
-            <div class="gallery-overlay">
-              <div class="gallery-title">ATTĒLS</div>
-              <div class="gallery-icon-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="15 3 21 3 21 9" />
-                  <polyline points="9 21 3 21 3 15" />
-                  <line x1="21" y1="3" x2="14" y2="10" />
-                  <line x1="3" y1="21" x2="10" y2="14" />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item reveal delay-3">
-            <div class="img-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
-              </svg>
-              <span>ATTĒLS</span>
-            </div>
-            <div class="gallery-overlay">
-              <div class="gallery-title">ATTĒLS</div>
-              <div class="gallery-icon-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="15 3 21 3 21 9" />
-                  <polyline points="9 21 3 21 3 15" />
-                  <line x1="21" y1="3" x2="14" y2="10" />
-                  <line x1="3" y1="21" x2="10" y2="14" />
-                </svg>
-              </div>
+                </svg></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Lightbox Overlay -->
     <div class="lightbox" id="lightboxModal">
       <div class="lightbox-content">
         <button class="lightbox-close" id="lightboxClose">&times;</button>
-        <div class="img-placeholder" style="height: 100%;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="3" y="3" width="18" height="18" rx="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <polyline points="21 15 16 10 5 21" />
-          </svg>
-          <span>ATTĒLS</span>
-        </div>
+        <img id="lightboxImg" src="" alt=""
+          style="max-width:90vw;max-height:85vh;border-radius:12px;object-fit:contain" />
       </div>
     </div>
 
-    <!-- ==========================================================================
-       6. WHY CHOOSE US
-       ========================================================================== -->
+    <!-- KĀPĒC MĒS -->
     <section class="section" id="why-us">
       <div class="container">
         <div class="section-header reveal">
-          <div class="section-tag">TEKSTS</div>
-          <h2 class="section-title">VIRSRAKSTS</h2>
-          <p class="section-subtitle">APRAKSTS</p>
+          <div class="section-tag">KĀPĒC MĒS</div>
+          <h2 class="section-title">Kāpēc Izvēlēties <span class="text-gradient">Privat Barber</span></h2>
+          <p class="section-subtitle">Mūsu pieredze, aizrautība un precizitāte padara katru apmeklējumu neaizmirstamu.
+          </p>
         </div>
-
         <div class="why-grid">
-          <!-- 6 Benefit Cards -->
           <div class="why-card glass-card reveal">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-            </div>
+              </svg></div>
             <div>
-              <h3 class="why-title">VIRSRAKSTS</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem;">TEKSTS</p>
+              <h3 class="why-title">Augsta kvalitāte</h3>
+              <p style="color:var(--text-muted);font-size:.95rem">Precīzs darbs līdz sīkākajai detaļai, izmantojot
+                profesionālus instrumentus un kopšanas līdzekļus.</p>
             </div>
           </div>
-
           <div class="why-card glass-card reveal delay-1">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
                 <circle cx="12" cy="12" r="10" />
                 <polyline points="12 6 12 12 16 14" />
-              </svg>
-            </div>
+              </svg></div>
             <div>
-              <h3 class="why-title">VIRSRAKSTS</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem;">TEKSTS</p>
+              <h3 class="why-title">Cienām tavu laiku</h3>
+              <p style="color:var(--text-muted);font-size:.95rem">Strādājam operatīvi un bez kavēšanās &mdash; saņem
+                kvalitatīvu griezumu paredzētajā laikā.</p>
             </div>
           </div>
-
           <div class="why-card glass-card reveal delay-2">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
                 <polygon
                   points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-              </svg>
-            </div>
+              </svg></div>
             <div>
-              <h3 class="why-title">VIRSRAKSTS</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem;">TEKSTS</p>
+              <h3 class="why-title">5&#9733; klientu vērtējums</h3>
+              <p style="color:var(--text-muted);font-size:.95rem">5 zvaigžņu vērtējums Google platformā no mūsu
+                pastāvīgajiem klientiem.</p>
             </div>
           </div>
-
           <div class="why-card glass-card reveal">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                 <circle cx="12" cy="7" r="4" />
-              </svg>
-            </div>
+              </svg></div>
             <div>
-              <h3 class="why-title">VIRSRAKSTS</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem;">TEKSTS</p>
+              <h3 class="why-title">Individualitāte</h3>
+              <p style="color:var(--text-muted);font-size:.95rem">Pirms griešanas vienmēr izrunāsim tavas vēlmes un
+                ieteiksim piemērotāko veidolu.</p>
             </div>
           </div>
-
           <div class="why-card glass-card reveal delay-1">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
-                <polyline points="17 2 12 7 7 2" />
-              </svg>
-            </div>
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg></div>
             <div>
-              <h3 class="why-title">VIRSRAKSTS</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem;">TEKSTS</p>
+              <h3 class="why-title">Ērta atrašanās vieta</h3>
+              <p style="color:var(--text-muted);font-size:.95rem">Esam pašā Rīgas centrā &mdash; 13. janvāra ielā 3.</p>
             </div>
           </div>
-
           <div class="why-card glass-card reveal delay-2">
-            <div class="why-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="why-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                 <polyline points="22 4 12 14.01 9 11.01" />
-              </svg>
-            </div>
+              </svg></div>
             <div>
-              <h3 class="why-title">VIRSRAKSTS</h3>
-              <p style="color: var(--text-muted); font-size: 0.95rem;">TEKSTS</p>
+              <h3 class="why-title">Viegla kopšana</h3>
+              <p style="color:var(--text-muted);font-size:.95rem">Griezums, kas izskatās labi ne tikai krēslā, bet ir
+                viegli ieveidojams arī ikdienā mājās.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================================
-       7. TESTIMONIALS
-       ========================================================================== -->
+    <!-- ATSAUKSMES -->
     <section class="section" id="testimonials">
       <div class="container">
         <div class="section-header reveal">
-          <div class="section-tag">TEKSTS</div>
-          <h2 class="section-title">VIRSRAKSTS</h2>
-          <p class="section-subtitle">APRAKSTS</p>
+          <div class="section-tag">ATSAUKSMES</div>
+          <h2 class="section-title">Ko Saka Mūsu <span class="text-gradient">Klienti</span></h2>
+          <p class="section-subtitle">Pārbaudīts &mdash; īstas atsauksmes no īstiem klientiem Google Maps.</p>
         </div>
-
         <div class="testimonials-grid">
-          <!-- Testimonial 1 -->
           <div class="testimonial-card glass-card reveal">
             <div class="testimonial-stars">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
             </div>
-            <p class="testimonial-quote">"KLIENTA ATSAUKSME"</p>
+            <p class="testimonial-quote">&#8220;Best barbershop in town! Cena 40&ndash;45 EUR. Iesaku visiem, kas meklē
+              patiesu premium pieredzi.&#8221;</p>
             <div class="testimonial-author">
-              <div class="avatar-placeholder">ATTĒLS</div>
+              <div class="avatar-placeholder">GB</div>
               <div>
-                <div class="author-name">KLIENTA VĀRDS</div>
-                <div class="author-role">AMATS</div>
+                <div class="author-name">Guntis Bērtiņš</div>
+                <div class="author-role">Google atsauksme &bull; pirms mēneša</div>
               </div>
             </div>
           </div>
-
-          <!-- Testimonial 2 -->
           <div class="testimonial-card glass-card reveal delay-1">
             <div class="testimonial-stars">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
             </div>
-            <p class="testimonial-quote">"KLIENTA ATSAUKSME"</p>
+            <p class="testimonial-quote">&#8220;Probably the best barber in the world. I&#8217;m convinced there&#8217;s
+              nothing this person can&#8217;t do with your hair &mdash; the perfect balance of price, quality, and
+              speed.&#8221;</p>
             <div class="testimonial-author">
-              <div class="avatar-placeholder">ATTĒLS</div>
+              <div class="avatar-placeholder">ĒK</div>
               <div>
-                <div class="author-name">KLIENTA VĀRDS</div>
-                <div class="author-role">AMATS</div>
+                <div class="author-name">Ēriks Koroļkovs</div>
+                <div class="author-role">Google atsauksme &bull; pirms mēneša</div>
               </div>
             </div>
           </div>
-
-          <!-- Testimonial 3 -->
           <div class="testimonial-card glass-card reveal delay-2">
             <div class="testimonial-stars">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
             </div>
-            <p class="testimonial-quote">"KLIENTA ATSAUKSME"</p>
+            <p class="testimonial-quote">&#8220;Lieliska pieredze! Frizieris ir ļoti profesionāls, uzmanīgs pret detaļām
+              un vienmēr uzklausa klienta vēlmes. Rezultāts katru reizi pārsniedz manas cerības.&#8221;</p>
             <div class="testimonial-author">
-              <div class="avatar-placeholder">ATTĒLS</div>
+              <div class="avatar-placeholder">AH</div>
               <div>
-                <div class="author-name">KLIENTA VĀRDS</div>
-                <div class="author-role">AMATS</div>
+                <div class="author-name">Autohouse</div>
+                <div class="author-role">Google atsauksme &bull; pirms mēneša</div>
               </div>
             </div>
           </div>
@@ -574,235 +584,227 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
-       8. CONTACT SECTION
-       ========================================================================== -->
+    <!-- KONTAKTI -->
     <section class="section" id="contact">
       <div class="container">
         <div class="section-header reveal">
-          <div class="section-tag">TEKSTS</div>
-          <h2 class="section-title">VIRSRAKSTS</h2>
-          <p class="section-subtitle">APRAKSTS</p>
+          <div class="section-tag">KONTAKTI</div>
+          <h2 class="section-title">Atrodiet <span class="text-gradient">Mūs</span></h2>
+          <p class="section-subtitle">Esam gatavi jūs uzņemt! Pierakstieties pa tālruni vai izmantojiet tiešsaistes
+            pierakstu.</p>
         </div>
-
         <div class="contact-grid">
-          <!-- Left: Contact Details -->
           <div class="contact-info-card glass-card reveal">
-            <h3 style="font-size: 1.6rem; text-transform: uppercase;" class="text-gradient">VIRSRAKSTS</h3>
-
+            <h3 style="font-size:1.6rem;text-transform:uppercase" class="text-gradient">Kontaktinformācija</h3>
             <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
-                </svg>
-              </div>
+                </svg></div>
               <div>
                 <div class="contact-label">ADRESE</div>
-                <div class="contact-value">ADRESE</div>
+                <div class="contact-value">13. janvāra iela 3, Centra rajons, Rīga, LV-1050</div>
               </div>
             </div>
-
             <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <path
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </div>
+                </svg></div>
               <div>
-                <div class="contact-label">TELEFONA NUMURS</div>
-                <div class="contact-value">TELEFONA NUMURS</div>
+                <div class="contact-label">TĀLRUNIS</div>
+                <div class="contact-value"><a href="tel:20546403"
+                    style="color:var(--accent-gold);text-decoration:none">20546403</a></div>
               </div>
             </div>
-
             <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-label">E-PASTS</div>
-                <div class="contact-value">E-PASTS</div>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
                   <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 16 14" />
-                </svg>
-              </div>
+                  <polyline points="12 6 12 12 16 14" />
+                </svg></div>
               <div>
                 <div class="contact-label">DARBA LAIKS</div>
-                <div class="contact-value">DARBA LAIKS</div>
+                <div class="hours-grid">
+                  <div class="hours-row"><span>Pirmdiena</span><span>10:00 &ndash; 20:00</span></div>
+                  <div class="hours-row"><span>Otrdiena</span><span>10:00 &ndash; 20:00</span></div>
+                  <div class="hours-row"><span>Trešdiena</span><span>10:00 &ndash; 20:00</span></div>
+                  <div class="hours-row"><span>Ceturtdiena</span><span>10:00 &ndash; 20:00</span></div>
+                  <div class="hours-row"><span>Piektdiena</span><span>10:00 &ndash; 20:00</span></div>
+                  <div class="hours-row weekend"><span>Sestdiena</span><span>09:00 &ndash; 17:00</span></div>
+                  <div class="hours-row weekend"><span>Svētdiena</span><span>09:00 &ndash; 17:00</span></div>
+                </div>
               </div>
             </div>
-
             <div>
-              <div class="contact-label" style="margin-bottom: 12px;">SOCIĀLIE TĪKLI</div>
+              <div class="contact-label" style="margin-bottom:12px">SOCIĀLIE TĪKLI</div>
               <div class="social-links">
-                <a href="#" class="social-icon" aria-label="Social Link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <a href="#" class="social-icon" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
-                </a>
-                <a href="#" class="social-icon" aria-label="Social Link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  </svg></a>
+                <a href="#" class="social-icon" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                  </svg>
-                </a>
-                <a href="#" class="social-icon" aria-label="Social Link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path
-                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                  </svg>
-                </a>
+                  </svg></a>
               </div>
             </div>
           </div>
-
-          <!-- Right: Book Button -->
           <div class="contact-cta-card glass-card reveal delay-1">
-            <h3 style="font-size: 1.6rem; text-transform: uppercase; margin-bottom: 12px;">REZERVĒ VIETU</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 28px;">APRAKSTS</p>
+            <h3 style="font-size:1.6rem;text-transform:uppercase;margin-bottom:12px">Rezervējiet vietu</h3>
+            <p style="color:var(--text-muted);font-size:.95rem;margin-bottom:28px">Viegli pierakstieties tiešsaistē vai
+              zvaniet mums tieši. Mūsu meistari ir gatavi rūpēties par jūsu izskatu!</p>
+            <a href="tel:20546403" class="btn btn-secondary"
+              style="width:100%;text-align:center;margin-bottom:16px;display:block">&#128222; ZVANĪT: 20546403</a>
             <button class="btn btn-primary open-booking-modal"
-              style="width: 100%; font-size: 1.1rem; padding: 20px 36px;">PIERAKSTĪTIES</button>
+              style="width:100%;font-size:1.1rem;padding:20px 36px">PIERAKSTĪTIES TIEŠSAISTĒ</button>
           </div>
         </div>
-
-        <!-- Map Placeholder -->
+        <!-- Google Maps ar pareizo atrašanās vietu -->
         <div class="map-container glass-card reveal">
-          <div class="img-placeholder" style="height: 100%;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
-              <line x1="8" y1="2" x2="8" y2="18" />
-              <line x1="16" y1="6" x2="16" y2="22" />
-            </svg>
-            <span>ATTĒLS (KARTE)</span>
-          </div>
+          <iframe
+            src="https://maps.google.com/maps?q=Privat%20Barber%2C%2013.%20janv%C4%81ra%20iela%203%2C%20R%C4%ABga%2C%20LV-1050&t=&z=17&ie=UTF8&iwloc=B&output=embed"
+            width="100%" height="100%" style="border:0;border-radius:16px" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Privat Barber atrašanās vieta Rīgā">
+          </iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ==========================================================================
-     9. FOOTER
-     ========================================================================== -->
+  <!-- KĀJENE -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="logo-box" style="margin-bottom: 20px;">
-            <div class="logo-badge">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M6 3v18M18 3v18M6 8h12M6 16h12" />
-              </svg>
-            </div>
-            <span>LOGO</span>
+          <div class="footer-logo-wrap" style="margin-bottom:20px">
+            <img src="images/logo.png" alt="Privat Barber logo" style="height:80px;object-fit:contain" />
           </div>
-          <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 300px; margin-bottom: 24px;">APRAKSTS</p>
+          <p style="color:var(--text-muted);font-size:.95rem;max-width:300px;margin-bottom:24px">Premium barbershop
+            Rīgas centrā. Katrs apmeklējums ir unikāla pieredze.</p>
           <div class="social-links">
-            <a href="#" class="social-icon" aria-label="Social Link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <a href="#" class="social-icon" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-              </svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="Social Link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              </svg></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-              </svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="Social Link">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path
-                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-              </svg>
-            </a>
+              </svg></a>
           </div>
         </div>
-
         <div>
-          <h4 class="footer-col-title">VIRSRAKSTS</h4>
+          <h4 class="footer-col-title">Navigācija</h4>
           <ul class="footer-links">
             <li><a href="#hero">Sākums</a></li>
             <li><a href="#about">Par mums</a></li>
-            <li><a href="#pricing">Cenas</a></li>
+            <li><a href="#pricing">Pakalpojumi</a></li>
             <li><a href="#gallery">Galerija</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="footer-col-title">VIRSRAKSTS</h4>
+          <h4 class="footer-col-title">Papildus</h4>
           <ul class="footer-links">
             <li><a href="#testimonials">Atsauksmes</a></li>
             <li><a href="#contact">Kontakti</a></li>
+            <li><a href="#why-us">Kāpēc mēs</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 class="footer-col-title">VIRSRAKSTS</h4>
-          <div class="contact-value" style="font-size: 0.95rem; color: var(--text-muted);">TELEFONA NUMURS</div>
-          <div class="contact-value" style="font-size: 0.95rem; color: var(--text-muted); margin-top: 4px;">E-PASTS</div>
+          <h4 class="footer-col-title">Kontakti</h4>
+          <div style="font-size:.95rem;color:var(--text-muted)"><a href="tel:20546403"
+              style="color:var(--accent-gold);text-decoration:none">&#128222; 20546403</a></div>
+          <div style="font-size:.9rem;color:var(--text-muted);margin-top:8px">&#128205; 13. janvāra iela 3, Rīga</div>
+          <div style="font-size:.9rem;color:var(--text-muted);margin-top:8px">P&ndash;Pk:
+            10:00&ndash;20:00<br>S&ndash;Sv: 09:00&ndash;17:00</div>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p>&copy; 2026 LOGO. SOCIĀLIE TĪKLI - TEKSTS</p>
+        <p>&copy; 2026 PRIVAT BARBER. Rīga, Latvija &mdash; Premium Barbershop.</p>
       </div>
     </div>
   </footer>
 
-  <!-- ==========================================================================
-     10. BOOKING MODAL WINDOW
-     ========================================================================== -->
+  <!-- PIERAKSTA MODĀLS -->
   <div class="modal-overlay" id="bookingModal">
     <div class="modal-card glass-card">
       <button class="modal-close" id="modalClose">&times;</button>
-      <div id="bookingSuccessMessage" style="display: none; text-align: center; padding: 30px 10px;">
-        <div style="font-size: 3rem; margin-bottom: 16px; color: #4CAF50;">✓</div>
-        <h3 style="font-size: 1.6rem; text-transform: uppercase; margin-bottom: 12px;">PALDIES!</h3>
-        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6;">
-          Jūsu pieteikums ir veiksmīgi saņemts.<br>Tuvākajā laikā ar Jums sazināsimies!
-        </p>
+      <div id="bookingSuccessMessage" style="display:none;text-align:center;padding:30px 10px">
+        <div style="font-size:3rem;margin-bottom:16px;color:var(--accent-gold)">&#10003;</div>
+        <h3 style="font-size:1.6rem;text-transform:uppercase;margin-bottom:12px" class="text-gradient">PALDIES!</h3>
+        <p style="color:var(--text-muted);font-size:1rem;line-height:1.6">Jūsu pieteikums ir veiksmīgi
+          saņemts.<br>Tuvākajā laikā ar Jums sazināsimies!</p>
       </div>
-
       <form id="modalBookingForm" action="https://formsubmit.co/kozlovskismarkuss7@gmail.com" method="POST">
+        <!-- FormSubmit Konfigurācija -->
+        <input type="hidden" name="_subject" value="Jauns pieteikums - Privat Barber">
+        <input type="hidden" name="_template" value="box">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://murxzz.github.io/barbershop-template.github.io/">
-        <div class="form-group">
-          <label class="form-label">Vārds</label>
-          <input type="text" name="name" class="form-input" placeholder="Jūsu vārds" required>
+        <input type="hidden" name="_next" value="https://privat-barber.github.io/">
+
+        <div style="text-align:center;margin-bottom:24px">
+          <h3 style="font-size:1.5rem;text-transform:uppercase" class="text-gradient">Pierakstīties</h3>
+          <p style="color:var(--text-muted);font-size:.9rem">PRIVAT BARBER &bull; 13. janvāra iela 3, Rīga</p>
         </div>
         <div class="form-group">
-          <label class="form-label">Telefons</label>
-          <input type="tel" name="phone" class="form-input" placeholder="+371 20000000" required>
+          <label class="form-label">Vārds</label>
+          <input type="text" name="Klients" id="form-name" class="form-input" placeholder="Jūsu vārds" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tālrunis</label>
+          <input type="tel" name="Tālrunis" id="form-phone" class="form-input" placeholder="+371 20000000" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Meistars</label>
+          <select name="Meistars" id="form-specialist" class="form-input" style="cursor:pointer" required>
+            <option value="">Izvēlieties meistaru</option>
+            <option value="Iļja (Barbieris)">Iļja (Barbieris 5.0&#9733;)</option>
+            <option value="Ļubova (Barbiere)">Ļubova (Barbiere)</option>
+            <option value="Jebkurš brīvais meistars">Jebkurš brīvais meistars</option>
+          </select>
         </div>
         <div class="form-group">
           <label class="form-label">Pakalpojums</label>
-          <select name="service" class="form-input" style="cursor: pointer;" required>
-            <option value="">Izvēlies pakalpojumu</option>
-            <option value="Vīriešu matu griezums">Vīriešu matu griezums</option>
-            <option value="Bārdas korekcija">Bārdas korekcija</option>
-            <option value="Griezums + Bārda">Griezums + Bārda</option>
+          <select name="Pakalpojums" id="form-service" class="form-input" style="cursor:pointer" required>
+            <option value="">Izvēlieties pakalpojumu</option>
+            <optgroup label="Kombo">
+              <option value="Matu griezums + Bārdas korekcija (45 €)">Matu griezums + Bārdas korekcija &mdash; 45 &euro;
+              </option>
+            </optgroup>
+            <optgroup label="Mati">
+              <option value="Matu griezums ar trimmeri (25 €)">Matu griezums ar trimmeri (Buzz Cut) &mdash; 25 &euro;</option>
+              <option value="Klasisks matu griezums īsiem matiem (30 €)">Klasisks matu griezums &mdash; 30 &euro;</option>
+              <option value="Galvas skūšana ar karstu dvieli un nazi (30 €)">Galvas skūšana ar karstu dvieli &mdash; 30 &euro;</option>
+              <option value="Bērnu matu griezums (25 €)">Bērnu matu griezums &mdash; 25 &euro;</option>
+            </optgroup>
+            <optgroup label="Bārda">
+              <option value="Bārdas korekcija ar karstu dvieli un nazi (25 €)">Bārdas korekcija ar karstu dvieli &mdash; 25 &euro;
+              </option>
+              <option value="Sausa bārdas korekcija ar trimmeri (20 €)">Sausa bārdas korekcija ar trimmeri &mdash; 20 &euro;</option>
+              <option value="Pilnīga bārdas noskūšana ar karstu dvieli un nazi (25 €)">Pilnīga bārdas noskūšana &mdash; 25 &euro;</option>
+              <option value="Vaska epilācija (5 €)">Vaska epilācija (Wax) &mdash; 5 &euro;</option>
+            </optgroup>
+            <optgroup label="Speciālie pakalpojumi">
+              <option value="Bārdas korekcija + Bārdas tonēšana (35 €)">Bārdas korekcija + Bārdas tonēšana &mdash; 35 &euro;</option>
+              <option value="Matu griezums + Sirmo matu tonēšana (40 €)">Matu griezums + Sirmo matu tonēšana &mdash; 40 &euro;</option>
+            </optgroup>
           </select>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label">Datums</label>
-            <input type="date" name="date" class="form-input" required style="color-scheme: dark;">
+            <input type="date" name="Datums" id="form-date" class="form-input" required style="color-scheme:dark">
           </div>
           <div class="form-group">
             <label class="form-label">Laiks</label>
-            <select name="time" class="form-input" style="cursor: pointer;" required>
-              <option value="">Izvēlies laiku</option>
+            <select name="Laiks" id="form-time" class="form-input" style="cursor:pointer" required>
+              <option value="">Izvēlieties laiku</option>
               <option>09:00</option>
               <option>10:00</option>
               <option>11:00</option>
@@ -813,15 +815,16 @@
               <option>16:00</option>
               <option>17:00</option>
               <option>18:00</option>
+              <option>19:00</option>
             </select>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">PIERAKSTĪTIES</button>
+        <button type="submit" class="btn btn-primary" id="submit-booking"
+          style="width:100%;margin-top:10px">PIERAKSTĪTIES</button>
       </form>
     </div>
   </div>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 

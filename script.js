@@ -1,5 +1,5 @@
 /**
- * PREMIUM BARBERSHOP TEMPLATE INTERACTIVE SCRIPT
+ * PRIVAT BARBER - Interactive Script
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileLinks = document.querySelectorAll('.mobile-link');
 
   const toggleMobileNav = () => {
-    mobileNav.classList.toggle('open');
-    navOverlay.classList.toggle('open');
-    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    mobileNav.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
   };
 
   if (navToggle) {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   mobileLinks.forEach(link => {
     link.addEventListener('click', () => {
-      if (mobileNav.classList.contains('open')) {
+      if (mobileNav.classList.contains('active')) {
         toggleMobileNav();
       }
     });
@@ -70,41 +70,42 @@ document.addEventListener('DOMContentLoaded', () => {
      ========================================================================== */
   const revealElements = document.querySelectorAll('.reveal');
 
-  const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target);
-      }
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.05,
+      rootMargin: '50px 0px 50px 0px'
     });
-  }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
-  });
 
-  revealElements.forEach(el => revealObserver.observe(el));
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('visible'));
+  }
 
   /* ==========================================================================
-     4. FAQ ACCORDION
+     4. PRICING SECTION TOGGLE (KOMBO & SPECIĀLIE PAKALPOJUMI)
      ========================================================================== */
-  const faqItems = document.querySelectorAll('.faq-item');
+  const togglePricingBtn = document.getElementById('togglePricingBtn');
+  const pricingExtra = document.getElementById('pricingExtra');
 
-  faqItems.forEach(item => {
-    const questionBtn = item.querySelector('.faq-question');
-    questionBtn.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
-
-      // Close other items
-      faqItems.forEach(otherItem => {
-        otherItem.classList.remove('active');
-      });
-
-      // Toggle current item
-      if (!isActive) {
-        item.classList.add('active');
+  if (togglePricingBtn && pricingExtra) {
+    togglePricingBtn.addEventListener('click', () => {
+      const isHidden = pricingExtra.style.display === 'none' || pricingExtra.style.display === '';
+      if (isHidden) {
+        pricingExtra.style.display = 'block';
+        togglePricingBtn.textContent = 'RĀDĪT MAZĀK';
+      } else {
+        pricingExtra.style.display = 'none';
+        togglePricingBtn.textContent = 'SKATĪT VAIRĀK';
       }
     });
-  });
+  }
 
   /* ==========================================================================
      5. GALLERY LIGHTBOX MODAL
@@ -112,10 +113,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryItems = document.querySelectorAll('.gallery-item');
   const lightboxModal = document.getElementById('lightboxModal');
   const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxImg = document.getElementById('lightboxImg');
 
   galleryItems.forEach(item => {
     item.addEventListener('click', () => {
       if (lightboxModal) {
+        const img = item.querySelector('.gallery-img');
+        if (img && lightboxImg) {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+        }
         lightboxModal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
