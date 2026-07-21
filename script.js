@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.05,
-      rootMargin: '50px 0px 50px 0px'
+      threshold: 0.02,
+      rootMargin: '120px 0px 120px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
